@@ -56,6 +56,11 @@ section{
     border-radius: 5rem;
 }
 
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+}
+
 .btn i{
     padding:0 .5rem;
     font-size: 1.8rem;
@@ -155,7 +160,7 @@ header .navbar ul li a:hover{
 }
 
 .home h3{
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color:#fff;
 }
 
@@ -185,11 +190,12 @@ header .navbar ul li a:hover{
 .about .row .info{
     flex:1 1 48rem;
     padding:2rem 1rem;
-    padding-left: 6rem;
+    padding-left: 8rem;
+    margin-bottom: 50px;
 }
 
 .about .row .info h3{
-    font-size: 2rem;
+    font-size: 2.2rem;
     color:var(--yellow);
     padding:1rem 0;
     font-weight: normal;
@@ -213,6 +219,10 @@ header .navbar ul li a:hover{
     text-align: center;
     padding: 2rem;
     margin:2rem;
+}
+
+.about .row .counter .box:hover{
+  background-color: #f9ca24;
 }
 
 .about .row .counter .box span{
@@ -275,33 +285,6 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
-.portfolio .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-}
-
-.portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.portfolio .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-.portfolio .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
 .contact .row{
     display: flex;
     align-items: center;
@@ -346,6 +329,7 @@ header .navbar ul li a:hover{
     color:#fff;
     font-size: 3rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 .contact .row .content .info h3{
@@ -369,6 +353,9 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+.publications h2 {
+  color: white;
+}
 
 
 
@@ -376,18 +363,6 @@ header .navbar ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
 
 @media (max-width:1200px){
 
@@ -444,10 +419,6 @@ header .navbar ul li a:hover{
     }
 
     .education .box-container .box{
-        width:100%;
-    }
-
-    .portfolio .box-container .box{
         width:100%;
     }
 
